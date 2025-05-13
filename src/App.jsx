@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<ItemListContainer mensaje="Bienvenido a nuestra tienda" />} />
+        <Route path="/principalPage" element={<ItemListContainer mensaje="Bienvenido a nuestra tienda" />} />
         <Route path="/catalogo" element={<CatalogContainer />} />
         <Route path="/producto1" element={<ItemListContainer mensaje="Detalle de Producto 1" />} />
         <Route path="/producto2" element={<ItemListContainer mensaje="Detalle de Producto 2" />} />

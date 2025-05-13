@@ -5,7 +5,7 @@ const CartWidget = () => {
   return (
     <Link to="/cart" style={styles.cartContainer}>
       <img src={carritoIcon} alt="Carrito de compras" style={styles.cartIcon} />
-      <span style={styles.notificationBubble}>100</span> {}
+      <span style={styles.notificationBubble}>99+</span> {}
     </Link>
   );
 };
@@ -22,6 +22,7 @@ const styles = {
   cartIcon: {
     width: "50px",
     height: "50px",
+    paddingRight: "50px",
   },
   notificationBubble: {
     backgroundColor: "#ff0000",
@@ -35,8 +36,8 @@ const styles = {
     fontSize: "14px",
     fontWeight: "bold",
     position: "absolute",
-    top: "5px",
-    right: "-5px",
+    top: "0px",
+    right: "50px",
   },
 };
 

@@ -1,12 +1,14 @@
-import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
+import CartWidget from "./CartWidget";
 import logoTienda from "../assets/icons/logo-tienda.png";
+import logoTienda2 from "../assets/icons/logo.png";
 
 const NavBar = () => {
   return (
     <nav style={styles.nav}>
-      <Link to="/" style={styles.logoContainer}>
+      <Link to="/principalPage" style={styles.logoContainer}>
         <img src={logoTienda} alt="Logo de la tienda" style={styles.logo} />
+        <img src={logoTienda2} alt="Logo nombre de la tienda" style={styles.logoNombre} />
       </Link>
 
       <div style={styles.linksContainer}>
@@ -36,21 +38,30 @@ const styles = {
     color: "#fff",
     boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
     zIndex: 1000,
+    padding: "0 20px",
   },
-  logoContainer: {
+logoContainer: {
     display: "flex",
     alignItems: "center",
+    gap: "5px",
+    marginLeft: "50px",
+        zIndex: 1001,
   },
   logo: {
     width: "50px",
     height: "50px",
   },
+  logoNombre: {
+    width: "100px",
+    height: "60px",
+  },
   linksContainer: {
     display: "flex",
-    gap: "15px",
+    gap: "25px",
     justifyContent: "center",
     alignItems: "center",
     flexGrow: 1,
+    marginLeft: "-250px",
   },
   link: {
     textDecoration: "none",
